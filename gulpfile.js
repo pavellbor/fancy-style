@@ -124,10 +124,10 @@ function clean() {
 }
 
 function watchFiles() {
-  gulp.watch([path.watch.html], html);
-  gulp.watch([path.watch.css], css);
-  gulp.watch([path.watch.js], js);
-  gulp.watch([path.watch.images], images);
+  gulp.watch([path.watch.html], html).on('change', browserSyncReload);
+  gulp.watch([path.watch.css], css).on('change', browserSyncReload);
+  gulp.watch([path.watch.js], js).on('change', browserSyncReload);
+  gulp.watch([path.watch.images], images).on('change', browserSyncReload);
 }
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images,fonts));

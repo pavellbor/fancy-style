@@ -4,24 +4,42 @@
 /* Fonts */
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff") format("woff"),
-    url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: 300;
+  font-family: "Lato";
+  src: url("../fonts/latolight.woff") format("woff"),
+    url("../fonts/latolight.woff2") format("woff2");
 }
 
 @font-face {
   font-style: normal;
-  font-weight: 700;
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: 400;
+  font-family: "Lato";
+  src: url("../fonts/latoregular.woff") format("woff"),
+    url("../fonts/latoregular.woff2") format("woff2");
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Lato";
+  src: url("../fonts/latomedium.woff") format("woff"),
+    url("../fonts/latomedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Lato";
+  src: url("../fonts/latoblack.woff") format("woff"),
+    url("../fonts/latoblack.woff2") format("woff2");
+}
 
 /* Variables */
 $tablet: 958px;
-$desktop: 1366px;
+$desktop: 1920px;
+
+$primary: #000000;
+$secondary: #ffffff;
 
 
 /* Default styles */
@@ -32,12 +50,12 @@ html {
 body {
   margin: 0;
 
-  font-weight: 400;
-  font-size: 18px;
-  font-family: Arial, sans-serif;
-  color: #000000;
+  font-weight: 300;
+  font-size: 24px;
+  font-family: "Lato", Arial, sans-serif;
+  color: $primary;
 
-  background-color: #ffffff;
+  background-color: $secondary;
 }
 
 *,
@@ -47,6 +65,7 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -75,6 +94,7 @@ img {
 
 /* Blocks */
 @import "blocks/container";
+@import "blocks/page-header";
 
 
 /* Vendor libs */
