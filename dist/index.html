@@ -6,6 +6,327 @@
   <title>Главная страница</title></head>
 <body>
   
-  <h1>HomePage</h1>
+  
+  <!-- page-header -->
+  <header class="page-header">
+    <div class="offer">
+      <a class="offer__link" href="#">Дополнительная скидка 10% за подписку</a>
+      <button class="offer__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+  
+    <nav class="page-header__nav">
+      <a href="tel:+78000000000">8 (800) 000 00 00</a>
+  
+      <a class="page-header__logo  logo">
+        <img src="assets/img/logo.png" width="62" height="62" alt="Логотип сайта">
+      </a>
+  
+      <form class="page-header__search  search" action="#" method="GET">
+        <button class="search__button" type="submit">
+          <span class="visually-hidden">Искать</span>
+        </button>
+        <input class="search__input" type="search" name="search-request" placeholder="Поиск">
+      </form>
+  
+      <ul class="page-header__user-nav  user-nav">
+        <li class="user-nav__item">
+          <a class="user-nav__link  user-nav__link--cabinet" href="#">
+            <span class="visually-hidden">Личный кабинет</span>
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link  user-nav__link--favorite" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link  user-nav__link--cart" href="#">
+            <span class="visually-hidden">Корзина</span>
+          </a>
+        </li>
+      </ul>
+  
+      <ul class="page-header__site-nav  site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">NEW</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Женщины</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Мужчины</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Дети</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">SALE</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /page-header -->
+  
+  
+  <main>
+    <h1 class="visually-hidden">Интернет-магазин одежды «Fancy Style»</h1>
+  
+  
+    <!-- slider -->
+    <section class="slider">
+      <h2 class="visually-hidden">Новые коллекции</h2>
+  
+      <button class="slider__arrow  slider__arrow--hidden">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+  
+      <ul class="slider__list">
+        <li class="slider__item  slider-item slider-item--active">
+          <img class="slider-item__image" src="assets/img/pic-slider-1.jpg" width="1920" height="700" alt="Fall Winter 2020">
+          <h3 class="slider-item__title">Новая коллекция<br> fall winter 2020</h3>
+          <a class="slider-item__link" href="#">Подробнее</a>
+        </li>
+      </ul>
+  
+      <button class="slider__arrow  slider__arrow--hidden">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
+  
+      <p class="slider__toggles">
+        <button class="slider__toggle  slider__toggle--active">
+          <span class="visually-hidden">1 слайд</span>
+        </button>
+        <button class="slider__toggle">
+          <span class="visually-hidden">2 слайд</span>
+        </button>
+        <button class="slider__toggle">
+          <span class="visually-hidden">3 слайд</span>
+        </button>
+        <button class="slider__toggle">
+          <span class="visually-hidden">4 слайд</span>
+        </button>
+        <button class="slider__toggle">
+          <span class="visually-hidden">5 слайд</span>
+        </button>
+      </p>
+    </section>
+    <!-- /slider -->
+  
+  
+    <!-- collections -->
+    <section class="collections">
+      <h2 class="visually-hidden">Популярные коллекции</h2>
+  
+      <ul class="collections__list">
+        <li class="collections__item  collections-item">
+          <a href="#">
+            <img class="collections-item__image" src="assets/img/pic-collections-oversize.jpg" width="586" height="586" alt="Коллекция Oversize">
+            <h3 class="collections-item__title">Коллекция Oversize</h3>
+          </a>
+        </li>
+  
+        <li class="collections__item  collections-item">
+          <a href="#">
+            <img class="collections-item__image" src="assets/img/pic-collections-fall.jpg" width="586" height="586" alt="Коллекция Осень 2020">
+            <h3 class="collections-item__title">Коллекция Осень 2020</h3>
+          </a>
+        </li>
+  
+        <li class="collections__item  collections-item">
+          <a href="#">
+            <img class="collections-item__image" src="assets/img/pic-collections-nude.jpg" width="586" height="586" alt="Коллекция Nude">
+            <h3 class="collections-item__title">Коллекция Nude</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /collections -->
+  
+  
+    <!-- cards -->
+    <section class="cards">
+      <h2 class="visually-hidden">Комбинезоны</h2>
+      
+      <ul class="cards__list">
+        <li class="cards__item  cards-item">
+          <img class="cards-item__image" src="assets/img/pic-cards-1.jpg" width="435" height="742" alt="Комбинезон с капюшоном Megan">
+          <button class="cards-item__favourite">
+            <span class="visually-hidden">В избранное</span>
+          </button>
+          <p class="cards-item__colors">
+            <button class="card-item__color  cards-item__color--black">
+              <span class="visually-hidden">Черный</span>
+            </button>
+            <button class="card-item__color  cards-item__color--pink">
+              <span class="visually-hidden">Розовый</span>
+            </button>
+            <button class="card-item__color  cards-item__color--purple">
+              <span class="visually-hidden">Фиолетовый</span>
+            </button>
+          </p>
+          <h3 class="cards-item__title">Комбинезон с капюшоном<br> Megan (темно-синий)</h3>
+          <p class="cards-item__price">12 500</p>
+        </li>
+  
+        <li class="cards__item  cards-item">
+          <img class="cards-item__image" src="assets/img/pic-cards-2.jpg" width="435" height="742" alt="Комбинезон с капюшоном Megan">
+          <button class="cards-item__favourite">
+            <span class="visually-hidden">В избранное</span>
+          </button>
+          <p class="cards-item__colors">
+            <button class="card-item__color  cards-item__color--black">
+              <span class="visually-hidden">Черный</span>
+            </button>
+            <button class="card-item__color  cards-item__color--pink">
+              <span class="visually-hidden">Розовый</span>
+            </button>
+            <button class="card-item__color  cards-item__color--purple">
+              <span class="visually-hidden">Фиолетовый</span>
+            </button>
+          </p>
+          <h3 class="cards-item__title">Комбинезон с капюшоном<br> Megan (темно-синий)</h3>
+          <p class="cards-item__price">12 500</p>
+        </li>
+  
+        <li class="cards__item  cards-item">
+          <img class="cards-item__image" src="assets/img/pic-cards-1.jpg" width="435" height="742" alt="Комбинезон с капюшоном Megan">
+          <button class="cards-item__favourite">
+            <span class="visually-hidden">В избранное</span>
+          </button>
+          <h3 class="cards-item__title">Комбинезон с капюшоном<br> Megan (темно-синий)</h3>
+          <p class="cards-item__price"><span>15 500</span> 12 500</p>
+        </li>
+  
+        <li class="cards__item  cards-item">
+          <img class="cards-item__image" src="assets/img/pic-cards-2.jpg" width="435" height="742" alt="Комбинезон с капюшоном Megan">
+          <button class="cards-item__favourite">
+            <span class="visually-hidden">В избранное</span>
+          </button>
+          <h3 class="cards-item__title">Комбинезон с капюшоном<br> Megan (темно-синий)</h3>
+          <p class="cards-item__price"><span>15 500</span> 12 500</p>
+        </li>
+      </ul>
+    </section>
+    <!-- /cards -->
+  
+  
+    <!-- special -->
+    <section class="special">
+      <h2 class="visually-hidden">Специальные предложения</h2>
+  
+      <ul class="special__list">
+        <li class="spectial__item  special-item">
+          <a href="#">
+            <img class="special-item__image" src="assets/img/pic-special-delivery.jpg" width="890" height="585" alt="Доставка по всей России">
+            <img class="special-item__icon" src="assets/img/icon-special-delivery.png" width="82" height="84" aria-hidden="true">
+            <h3 class="special-item__title">Доставка по всей России</h3>
+            <p class="special-item__details">Почта России, СДЕК</p>
+          </a>
+        </li>
+  
+        <li class="spectial__item  special-item">
+          <a href="#">
+            <img class="special-item__image" src="assets/img/pic-special-sale.jpg" width="890" height="585" alt="Акция">
+            <img class="special-item__icon" src="assets/img/icon-special-sale.png" width="77" height="74" aria-hidden="true">
+            <h3 class="special-item__title">Акция!</h3>
+            <p class="special-item__details">Худи оверсайз до конца декабря <span>1990</span></p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /spectial -->
+    
+  
+    <!-- instagram -->
+    <section class="instagram">
+      <h2 class="visually-hidden">Наш инстаграм</h2>
+  
+      <ul class="instagram__list">
+        <li class="instagram__item  instagram-item">
+          <a href="#">
+            <img class="instagram-item__image" src="assets/img/pic-instagram-1.jpg" width="376" height="376" alt="Фото из Инстаграма">
+          </a>
+        </li>
+  
+        <li class="instagram__item  instagram-item">
+          <a href="#">
+            <img class="instagram-item__image" src="assets/img/pic-instagram-2.jpg" width="376" height="376" alt="Фото из Инстаграма">
+          </a>
+        </li>
+  
+        <li class="instagram__item  instagram-item">
+          <a href="#">
+            <img class="instagram-item__image" src="assets/img/pic-instagram-3.jpg" width="376" height="376" alt="Фото из Инстаграма">
+          </a>
+        </li>
+  
+        <li class="instagram__item  instagram-item">
+          <a href="#">
+            <img class="instagram-item__image" src="assets/img/pic-instagram-4.jpg" width="376" height="376" alt="Фото из Инстаграма">
+          </a>
+        </li>
+  
+        <li class="instagram__item  instagram-item">
+          <a href="#">
+            <img class="instagram-item__image" src="assets/img/pic-instagram-5.jpg" width="376" height="376" alt="Фото из Инстаграма">
+          </a>
+        </li>
+      </ul>
+      <p class="instagram__text">
+        <a class="instagram__hashtag" href="#">#fancy style spb</a><br>
+        Присоединяйся к нам в Instagram!
+      </p>
+    </section>
+    <!-- /instagram -->
+  </main>
+  
+  
+  <!-- page-footer -->
+  <footer class="page-footer">
+    <a class="page-footer__logo  logo">
+      <img class="logo__image" src="assets/img/logo.png" width="88" height="88" alt="Логотип">
+    </a>
+  
+    <nav class="page-footer__nav footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">О Fancy</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Вопрос-ответ</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Оплата и доставка</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Список пожеланий</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <ul class="page-footer__social social">
+      <li class="social__item  social-item">
+        <a class="social-item__link  social-item__link--inst" href="#">
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
+      <li class="social__item  social-item">
+        <a class="social-item__link  social-item__link--vk" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+    </ul>
+    
+    <p class="page-footer__contacts  contacts">
+      <a class="contacts__link" href="tel:+78000000000">8 (800) 00 00</a>
+      <a class="contacts__link" href="mailto:fancyst@yandex.ru">fancyst@yandex.ru</a>
+    </p>
+  </footer>
+  <!-- /footer -->
 </body>
 </html>
