@@ -1,0 +1,81 @@
+/* Normalize */
+@import "normalize";
+
+/* Fonts */
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
+
+/* Variables */
+$tablet: 958px;
+$desktop: 1366px;
+
+
+/* Default styles */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
+
+/* Blocks */
+@import "blocks/container";
+
+
+/* Vendor libs */
+@import "vendor/slick"
