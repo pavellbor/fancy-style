@@ -35,8 +35,11 @@
 }
 
 /* Variables */
-$tablet: 958px;
 $desktop: 1920px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile-l: 767px;
+$mobile-m: 375px;
 
 $primary: #000000;
 $secondary: #ffffff;
@@ -50,12 +53,20 @@ html {
 body {
   margin: 0;
 
-  font-weight: 300;
   font-size: 24px;
+  font-weight: 300;
   font-family: "Lato", Arial, sans-serif;
   color: $primary;
 
   background-color: $secondary;
+
+  @media (max-width: $laptop) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 *,

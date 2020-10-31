@@ -29,17 +29,20 @@ title: Главная страница
         />
       </a>
 
-      <form class="page-header__search search" action="#" method="GET">
-        <button class="search__button" type="submit">
-          <span class="visually-hidden">Искать</span>
-        </button>
-        <input
-          class="search__input"
-          type="text"
-          name="search-request"
-          placeholder="Поиск"
-        />
-      </form>
+      <div class="page-header__search search">
+        <button class="search__button">Поиск</button>
+        <form class="search-form search-form--hidden" action="#" method="GET">
+          <button class="search-form__button" type="submit">
+            <span class="visually-hidden">Искать</span>
+          </button>
+          <input
+            class="search-form__input"
+            type="text"
+            name="search-request"
+            placeholder="Поиск"
+          />
+        </form>
+      </div>
 
       <ul class="page-header__user-nav user-nav">
         <li class="user-nav__item">
@@ -458,10 +461,10 @@ title: Главная страница
           <a class="footer-nav__link" href="#">О FANCY</a>
         </li>
         <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">Оплата и доставка</a>
+          <a class="footer-nav__link" href="#">Вопрос-ответ</a>
         </li>
         <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">Вопрос-ответ</a>
+          <a class="footer-nav__link" href="#">Оплата и доставка</a>
         </li>
         <li class="footer-nav__item">
           <a class="footer-nav__link" href="#">Список пожеланий</a>
