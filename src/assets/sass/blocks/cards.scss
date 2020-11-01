@@ -27,18 +27,23 @@
   position: relative;
 
   height: 742px;
-}
 
+  @media (max-width: $laptop) {
+    height: 394px;
+  }
 
-
-.cards-item__images .cards-item__image {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @media (max-width: $tablet) {
+    height: 300px;
+  }
 }
 
 .cards-item__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 100%;
+  height: 100%;
 
   object-fit: cover;
 }

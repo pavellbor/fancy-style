@@ -603,7 +603,7 @@ img {
 
 @media (max-width: 767px) {
     .search-form {
-        width: 200px;
+        width: 180px;
         margin-bottom: 10px;
     }
 }
@@ -968,14 +968,24 @@ img {
     height: 742px;
 }
 
-.cards-item__images .cards-item__image {
-    position: absolute;
-    top: 0;
-    left: 0;
+@media (max-width: 1024px) {
+    .cards-item__images {
+        height: 394px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-item__images {
+        height: 300px;
+    }
 }
 
 .cards-item__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
