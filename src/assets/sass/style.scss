@@ -41,6 +41,9 @@ $tablet: 768px;
 $mobile-l: 767px;
 $mobile-m: 375px;
 
+$per: 100% / 1800;
+$perx: 100% / 1920;
+
 $primary: #000000;
 $secondary: #ffffff;
 
@@ -106,6 +109,12 @@ img {
 /* Blocks */
 @import "blocks/container";
 @import "blocks/page-header";
+@import "blocks/slider";
+@import "blocks/collections";
+@import "blocks/cards";
+@import "blocks/special";
+@import "blocks/instagram";
+@import "blocks/page-footer";
 
 
 /* Vendor libs */
