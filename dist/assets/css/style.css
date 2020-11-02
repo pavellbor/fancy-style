@@ -390,7 +390,7 @@ body {
     background-color: #ffffff;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1524px) {
     body {
         font-size: 20px;
     }
@@ -1223,10 +1223,16 @@ img {
     opacity: 0.5;
 }
 
+@media (max-width: 1524px) {
+    .special-item a {
+        font-size: 1.4em;
+        height: 450px;
+    }
+}
+
 @media (max-width: 1024px) {
     .special-item a {
         height: 385px;
-        font-size: 1.5em;
     }
 }
 
@@ -1246,7 +1252,7 @@ img {
     margin-bottom: 50px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1524px) {
     .special-item__icon {
         width: 62px;
         margin-top: -20px;
@@ -1310,6 +1316,12 @@ img {
     opacity: 0.5;
 }
 
+@media (max-width: 1524px) {
+    .instagram-item a {
+        height: 300px;
+    }
+}
+
 @media (max-width: 1024px) {
     .instagram-item a {
         height: 200px;
@@ -1336,6 +1348,12 @@ img {
     font-size: 1.67em;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (max-width: 1524px) {
+    .instagram__text {
+        font-size: 1.4em;
+    }
 }
 
 .instagram__hashtag {

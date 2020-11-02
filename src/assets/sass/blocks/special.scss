@@ -40,15 +40,18 @@
   text-align: center;
   color: $secondary;
   text-transform: uppercase;
-
+  
   &:hover {
     opacity: 0.5;
+  }
+  
+  @media (max-width: $laptop + 500px) {
+    font-size: 1.4em;
+    height: 450px;
   }
 
   @media (max-width: $laptop) {
     height: 385px;
-
-    font-size: 1.5em;
   }
 }
 
@@ -68,7 +71,7 @@
   margin-top: -70px;
   margin-bottom: 50px;
 
-  @media (max-width: $laptop) {
+  @media (max-width: $laptop + 500px) {
     width: 62px;
     margin-top: -20px;
     margin-bottom: 25px;

@@ -65,7 +65,7 @@ body {
 
   background-color: $secondary;
 
-  @media (max-width: $laptop) {
+  @media (max-width: $laptop + 500px) {
     font-size: 20px;
   }
 
