@@ -269,15 +269,6 @@
   color: $primary;
 
   &:hover {
-    opacity: 0.5;
-  }
-
-  &--bold {
-    font-weight: 500;
-    color: #6d678e;
-  }
-
-  &--underline {
     position: relative;
 
     &::after {
@@ -291,6 +282,11 @@
 
       background-color: $primary;
     }
+  }
+
+  &--bold {
+    font-weight: 500;
+    color: #6d678e;
   }
 
   @media (max-width: $mobile-l) {

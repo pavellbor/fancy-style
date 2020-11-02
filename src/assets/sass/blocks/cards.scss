@@ -28,6 +28,10 @@
 
   height: 742px;
 
+  @media (max-width: $laptop + 500px) {
+    height: 500px;
+  }
+
   @media (max-width: $laptop) {
     height: 394px;
   }

@@ -20,7 +20,21 @@
   height: 586px;
   padding: 40 * $per;
 
-  @media (max-width: $laptop) {
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &:hover .collections-item__title{
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: $laptop + 500px) {
+    height: 400px;
+  }
+
+  @media (max-width: $laptop + 200px) {
     height: 320px;
   }
 
@@ -56,9 +70,5 @@
 
   &--dark {
     color: $primary;
-  }
-
-  &:hover {
-    opacity: 0.5;
   }
 }
