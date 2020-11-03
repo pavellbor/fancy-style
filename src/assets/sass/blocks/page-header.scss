@@ -84,7 +84,19 @@
   color: $primary;
 
   &:hover {
-    opacity: 0.5;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $primary;
+    }
   }
 
   @media (max-width: $mobile-l) {
@@ -181,7 +193,7 @@
   padding: 0;
 
   background-color: transparent;
-  background-image: url("../img/icon-search.png");
+  background-image: url("../img/icon-search-hover.png");
   border: none;
   opacity: 0.5;
   cursor: pointer;
@@ -200,7 +212,14 @@
 }
 
 .user-nav__item {
+  position: relative;
+
   margin-right: 35px;
+  padding: 10px 0;
+
+  &:hover .user-nav__hover {
+    display: block;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -217,7 +236,7 @@
   height: 30px;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.9;
   }
 
   &--cabinet {
@@ -230,6 +249,43 @@
 
   &--cart {
     background: url("../img/icon-cart.png") center / 22px 30px no-repeat;
+  }
+
+  &--mark {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: -2px;
+
+      width: 14px;
+      height: 14px;
+
+      background-color: #bbb5c8;
+      border-radius: 50%;
+    }
+  }
+}
+
+.user-nav__hover {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  display: none;
+  width: 154px;
+  margin: 0;
+  padding: 13px 21px;
+
+  font-size: 18px;
+
+  background: $secondary;
+  border: 1px solid #9c97a4;
+
+  a:hover {
+    opacity: 0.5;
   }
 }
 

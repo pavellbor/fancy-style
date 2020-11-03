@@ -61,10 +61,9 @@
   font-size: 1.67em;
   color: $primary;
 
-  background-color: #f6b5cd;
-
+  
   &:hover {
-    opacity: 0.5;
+    background-color: #fad9e6;
   }
 
   &::after {
