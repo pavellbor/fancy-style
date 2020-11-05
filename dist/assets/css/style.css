@@ -1013,6 +1013,12 @@ img {
     text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+    .cards__title {
+        margin-top: 60px;
+    }
+}
+
 .cards__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1376,6 +1382,12 @@ img {
     font-size: 37px;
 }
 
+@media (max-width: 767px) {
+    .special-item__title {
+        font-size: 24px;
+    }
+}
+
 .special-item__details {
     margin: 0;
     font-size: 37px;
@@ -1390,6 +1402,12 @@ img {
 @media (max-width: 1524px) {
     .special-item__details {
         font-size: 1.4em;
+    }
+}
+
+@media (max-width: 767px) {
+    .special-item__details {
+        font-size: 24px;
     }
 }
 
@@ -1584,6 +1602,13 @@ img {
 
 .footer-nav__item:nth-child(even) {
     margin-right: 0;
+}
+
+@media (max-width: 767px) {
+    .footer-nav__item {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .page-footer__social {

@@ -82,6 +82,10 @@
 
   font-weight: 900;
   font-size: 37px;
+
+  @media (max-width: $mobile-l) {
+    font-size: 24px;
+  }
 }
 
 .special-item__details {
@@ -98,5 +102,9 @@
 
   @media (max-width: $laptop + 500px) {
     font-size: 1.4em;
+  }
+
+  @media (max-width: $mobile-l) {
+    font-size: 24px;
   }
 }

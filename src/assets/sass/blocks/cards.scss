@@ -8,6 +8,10 @@
   font-size: 1.5em;
   letter-spacing: 0.9px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-l) {
+    margin-top: 60px;
+  }
 }
 
 .cards__list {
