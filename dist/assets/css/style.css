@@ -1683,25 +1683,33 @@ img {
 }
 
 /* Vendor libs */
-/* Слайдер */
-.slick-slider {
+.slider {
+  /* Слайдер */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.slider .slick-slider {
     position: relative;
 }
 
-/* Ограничивающая оболочка */
-.slick-list {
+.slider .slick-list {
     overflow: hidden;
 }
 
-/* Лента слайдов */
-.slick-track {
+.slider .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-/* Стрелка */
-.slick-arrow {
+.slider .slick-arrow {
     position: absolute;
     top: 50%;
     z-index: 1;
@@ -1716,31 +1724,28 @@ img {
     cursor: pointer;
 }
 
-.slick-arrow:hover {
+.slider .slick-arrow:hover {
     opacity: 0.5;
 }
 
 @media (max-width: 767px) {
-    .slick-arrow {
+    .slider .slick-arrow {
         width: 30px;
         height: 20px;
     }
 }
 
-/* Стрелка влево */
-.slick-arrow.slick-prev {
+.slider .slick-arrow.slick-prev {
     left: 3.33333%;
     background: transparent url("../img/icon-arrow-left.png") center/cover;
 }
 
-/* Стрелка вправо */
-.slick-arrow.slick-next {
+.slider .slick-arrow.slick-next {
     right: 3.33333%;
     background: transparent url("../img/icon-arrow-right.png") center/cover;
 }
 
-/* Точки (булиты) */
-.slick-dots {
+.slider .slick-dots {
     position: absolute;
     bottom: 35px;
     right: 10.83333%;
@@ -1753,28 +1758,26 @@ img {
 }
 
 @media (max-width: 767px) {
-    .slick-dots {
+    .slider .slick-dots {
         right: 50%;
         -webkit-transform: translateX(50%);
         transform: translateX(50%);
     }
 }
 
-.slick-dots li {
+.slider .slick-dots li {
     margin-right: 7px;
 }
 
-.slick-dots li:last-child {
+.slider .slick-dots li:last-child {
     margin-right: 0;
 }
 
-/* Активная точка */
-.slick-dots li.slick-active button {
+.slider .slick-dots li.slick-active button {
     background-color: #000000;
 }
 
-/* Элемент точки */
-.slick-dots li button {
+.slider .slick-dots li button {
     width: 21px;
     height: 21px;
     padding: 0;
@@ -1786,6 +1789,139 @@ img {
     cursor: pointer;
 }
 
-.slick-dots li button:hover {
+.slider .slick-dots li button:hover {
+    opacity: 0.5;
+}
+
+.cards {
+  /* Слайдер */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.cards .slick-slider {
+    position: relative;
+    width: 100%;
+}
+
+.cards .slick-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cards .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media (max-width: 767px) {
+    .cards .slick-track {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+.cards .slick-slide {
+    margin: 0 10px;
+}
+
+.cards .slick-slide:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 767px) {
+    .cards .slick-slide {
+        margin: 0 5px;
+    }
+}
+
+.cards .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 43px;
+    height: 37px;
+    padding: 0;
+    font-size: 0;
+    border: none;
+    -webkit-transform: translateY(-115%);
+    transform: translateY(-115%);
+    outline: none;
+    cursor: pointer;
+}
+
+.cards .slick-arrow:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+    .cards .slick-arrow {
+        width: 30px;
+        height: 20px;
+    }
+}
+
+.cards .slick-arrow.slick-prev {
+    left: 3.33333%;
+    background: transparent url("../img/icon-arrow-left.png") center/cover;
+}
+
+.cards .slick-arrow.slick-next {
+    right: 3.33333%;
+    background: transparent url("../img/icon-arrow-right.png") center/cover;
+}
+
+.cards .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    right: 50%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.cards .slick-dots li {
+    margin-right: 7px;
+}
+
+.cards .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+.cards .slick-dots li.slick-active button {
+    background-color: #000000;
+    opacity: 1;
+}
+
+.cards .slick-dots li button {
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.cards .slick-dots li button:hover {
     opacity: 0.5;
 }
