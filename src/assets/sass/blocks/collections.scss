@@ -1,6 +1,10 @@
 
 .collections {
   margin-bottom: 61px;
+
+  @media (max-width: $mobile-l) {
+    margin-bottom: 30px;
+  }
 }
 
 .collections__list {
@@ -60,7 +64,8 @@
   margin: 0;
 
   font-weight: 900;
-  font-size: 1.67em;
+  font-size: 1.47em;
+  letter-spacing: 0.9px;
   text-align: left;
   text-transform: uppercase;
 

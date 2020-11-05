@@ -2,6 +2,14 @@
   margin-bottom: 70px;
 }
 
+.cards__title {
+  margin: 110px 0 50px;
+  font-weight: 900;
+  font-size: 1.5em;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
 .cards__list {
   display: flex;
   flex-wrap: wrap;
@@ -15,17 +23,18 @@
 .cards-item {
   position: relative;
 
-  width: 435 * $per;
+  width: 19%;
 
   @media (max-width: $mobile-l) {
     width: 49%;
+    margin-bottom: 15px;
   }
 }
 
 .cards-item__images {
   position: relative;
 
-  height: 742px;
+  height: 575px;
 
   @media (max-width: $laptop + 500px) {
     height: 500px;
@@ -53,16 +62,16 @@
 
 .cards-item__bestseller {
   position: absolute;
-  top: 8px;
-  left: 7%;
+  top: 16px;
+  left: 6%;
   z-index: 2;
 
-  min-width: 107px;
-  padding: 6px;
-  
+  min-width: 97px;
+  padding: 5px;
+
   font-weight: 600;
-  font-size: 1em;
-  
+  font-size: 16px;
+
   background-color: #fad9e5;
   border: none;
   
@@ -107,7 +116,7 @@
 .cards-item__details {
   position: relative;
 
-  padding: 40px 40 * $per;
+  padding: 52px 40 * $per 15px;
 
   &:hover {
     .cards-item__title {
@@ -141,7 +150,7 @@
 
 .cards-item__sizes {
   position: absolute;
-  top: 11px;
+  top: 17px;
   left: 50%;
 
   display: flex;
@@ -155,7 +164,7 @@
   margin-right: 5px;
 
   font-weight: 400;
-  font-size: 1em;
+  font-size: 18px;
 
   &--empty {
     color: #8d8d8d;
@@ -208,10 +217,11 @@
 }
 
 .cards-item__title {
-  margin: 0 0 16px;
+  margin: 0 0 23px;
 
   font-weight: 400;
-  font-size: 1em;
+  font-size: 18px;
+  letter-spacing: 0.61px;
   text-align: center;
 }
 
@@ -223,7 +233,7 @@
   margin: 0;
 
   font-weight: 900;
-  font-size: 1.67em;
+  font-size: 25px;
   text-align: center;
 
   span {
@@ -231,22 +241,20 @@
     margin-right: 20px;
 
     font-weight: 400;
-    font-size: 30px;
+    font-size: 18px;
     color: #6b6b6b;
     text-decoration: line-through;
 
-    @media (max-width: $laptop) {
-      font-size: 25px;
-    }
-
     @media (max-width: $tablet) {
       margin-right: 0;
+
+      font-size: 16px;
     }
 
     @media (max-width: $mobile-l) {
       margin-right: 10px;
 
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 }
